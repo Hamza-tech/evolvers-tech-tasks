@@ -28,27 +28,29 @@
         <input type="password" placeholder="Enter {{ input.name }}" class="form-control" [formControlName]="input.name">
       </div>
     </ng-container>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary mt-2">Submit</button>
   </form>
   </ng-container>
 </div>
+<div class="d-flex justify-content-center">
+  <table class="table table-dark mt-3 w-50">
+    <thead>
+      <tr>
+        <th scope="col" *ngFor="let header of userHeaders;">{{header}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of userArray;">
+        <td>{{row.Id}} </td>
+        <td>{{row.InternalId}} </td>
+        <td>{{row.Type}} </td>
+        <td>{{row.Billing}} </td>
+        <td>{{row.Email}} </td>
+        <td>{{row.Provider}} </td>
+        <td>{{row.State}} </td>
+        <td>{{row.Trial}} </td>
+      </tr>
+    </tbody>
+  </table>
 
-<table class="table table-dark">
-  <thead>
-    <tr>
-      <th scope="col" *ngFor="let header of userHeaders;">{{header}}</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let row of userArray;">
-      <td>{{row.Id}} </td>
-      <td>{{row.InternalId}} </td>
-      <td>{{row.Type}} </td>
-      <td>{{row.Billing}} </td>
-      <td>{{row.Email}} </td>
-      <td>{{row.Provider}} </td>
-      <td>{{row.State}} </td>
-      <td>{{row.Trial}} </td>
-    </tr>
-  </tbody>
-</table>
+</div>
