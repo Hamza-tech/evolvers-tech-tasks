@@ -1,0 +1,70 @@
+{
+	"controls": [
+		{
+			"name": "Name",
+			"type": "textfield",
+			"required": false
+		},
+		{
+			"name": "LastName",
+			"type": "textfield",
+			"required": false
+		},
+		{
+			"name": "Email",
+			"type": "email",
+			"required": true
+		},
+		{
+			"name": "Age",
+			"type": "number",
+			"required": true,
+			"min": 18,
+			"max": 80
+		},
+		{
+			"name": "Experience",
+			"type": "dropdown",
+			"options": [
+				{
+					"text": "1",
+					"value": 1
+				},
+				{
+					"text": "2",
+					"value": 2
+				},
+				{
+					"text": "3",
+					"value": 3
+				},
+				{
+					"text": "4",
+					"value": 4
+				},
+				{
+					"text": "5",
+					"value": 5
+				},
+				{
+					"text": "25",
+					"value": 25
+				}
+			]
+		},
+		{
+			"name": "Secret",
+			"type": "password"
+		}
+	],
+	"settings": {
+		"required": {
+			"name": "Secret",
+			"condition": {
+				"control": "Experience",
+				"operator": ">=",
+				"value": 3
+			}
+		}
+	}
+}

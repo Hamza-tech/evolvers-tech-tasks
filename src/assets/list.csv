@@ -1,0 +1,7 @@
+Id,InternalId,Type,Billing,Email,Provider,State,Trial
+5mogawqnwnk4znzq10w07706w,5mogbznnwnk4znzq112e7706w,password,paid,james.williams.0123@outlook.com,eas,running,FALSE
+w5rapwwfh38kppoag9crb9m,w5rapwwfh453p4qdg9crb9m,token,paid,davisnas@yahoo.com,yahoo,invalid-credentials,TRUE
+8v6x8ab6poq3nxf7yyudoeyw3,8v6x8ab6mip36787yyudoeyw3,password,notpaid,liaml@outlook.com,eas,running,FALSE
+88c3aitq8wxc6y0cz92j8to9f,88c3avsd8wxc6y8az92j8to9f,password,paid,info@kkk.com,gmail,sync,FALSE
+02c91itq8wxc6y09z92j8to9f,ldo3avsd8wxc6y8az92j8tlg9,password,paid,support@something.com,eas,sync,TRUE
+zac3aof98lfc6y0cz92j8tld4,0dc3avsd8wkfgo8az92j8tlfd,token,paid,some@dot.com,gmail,sync,FALSE
